@@ -8,7 +8,7 @@ namespace ReisezeitErdeMond
 {
     class Reisedauer
     {
-        double mondentfernungerde = 384400; //Meter
+        int mondentfernungerde = 384400; //Kilometer
         double zeit;
         public double Zeit
         {
