@@ -13,6 +13,7 @@ namespace Rechteckflaecheberechnen
         public double Fleache
         {
             get { return _fleache; }
+            set { zeit = value; }
         }
 
         public void berechnenflaeche(double hoeherechteck, double breiterechteck)

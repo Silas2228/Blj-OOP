@@ -93,6 +93,7 @@
             // 
             this.flaeche_txt.Location = new System.Drawing.Point(243, 141);
             this.flaeche_txt.Name = "flaeche_txt";
+            this.flaeche_txt.ReadOnly = true;
             this.flaeche_txt.Size = new System.Drawing.Size(177, 20);
             this.flaeche_txt.TabIndex = 6;
             // 

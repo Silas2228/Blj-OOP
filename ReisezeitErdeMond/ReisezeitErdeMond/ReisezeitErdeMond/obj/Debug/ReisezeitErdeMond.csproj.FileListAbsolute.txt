@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\bin\Debug\ReisezeitErdeMond.exe.config
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\bin\Debug\ReisezeitErdeMond.exe
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\bin\Debug\ReisezeitErdeMond.pdb
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.csprojAssemblyReference.cache
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.Form1.resources
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.Properties.Resources.resources
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.csproj.GenerateResource.cache
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.exe
+C:\git\Blj-OOP\ReisezeitErdeMond\ReisezeitErdeMond\ReisezeitErdeMond\obj\Debug\ReisezeitErdeMond.pdb
