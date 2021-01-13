@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\bin\Debug\Rechteckflaecheberechnen.exe.config
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\bin\Debug\Rechteckflaecheberechnen.exe
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\bin\Debug\Rechteckflaecheberechnen.pdb
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.csprojAssemblyReference.cache
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.Form1.resources
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.Properties.Resources.resources
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.csproj.GenerateResource.cache
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.exe
+C:\git\Blj-OOP\Rechteck\Rechteckflaecheberechnen\Rechteckflaecheberechnen\obj\Debug\Rechteckflaecheberechnen.pdb
