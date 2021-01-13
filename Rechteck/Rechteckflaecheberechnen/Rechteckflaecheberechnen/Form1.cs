@@ -23,11 +23,24 @@ namespace Rechteckflaecheberechnen
 
         private void Berechnen_Click(object sender, EventArgs e)
         {
-            double hoehe = Convert.ToDouble(hoehe_txt.Text);
-            double breite = Convert.ToDouble(breite_txt.Text);
-            rt.berechnenflaeche(hoehe, breite);
-            flaeche_txt.Text = rt.Fleache.ToString();
-
+            try
+            {
+                if(hoehe_txt.Text == "" || breite_txt.Text == "")
+                {
+                    MessageBox.Show("Sie müssen eine Zahl eingeben!");
+                }
+                else
+                { 
+                double hoehe = Convert.ToDouble(hoehe_txt.Text);
+                double breite = Convert.ToDouble(breite_txt.Text);
+                rt.berechnenflaeche(hoehe, breite);
+                flaeche_txt.Text = rt.Fleache.ToString();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Bitte nur Zahlen eingeben!");
+            }
         }
 
         private void Beenden_Click(object sender, EventArgs e)

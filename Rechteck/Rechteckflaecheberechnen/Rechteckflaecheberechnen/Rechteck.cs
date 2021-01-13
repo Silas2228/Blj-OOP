@@ -17,7 +17,7 @@ namespace Rechteckflaecheberechnen
 
         public void berechnenflaeche(double hoeherechteck, double breiterechteck)
         {
-            if(hoeherechteck == 0 && breiterechteck == 0)
+            if(hoeherechteck == 0 || breiterechteck == 0)
             {
                 throw new Exception("Hoehe und breite müssen ueber 0 sein!");
             }
