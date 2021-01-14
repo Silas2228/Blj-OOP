@@ -65,19 +65,6 @@ namespace Tannenbaum
                 }
                 zeichnung += Environment.NewLine;
             }
-            /*for( int i = 0; i < zeilen;i++)
-            {
-                spaces = zeilen - 1 - i;
-                stars = (i + 1) * 2 - 1;
-                for(int j = 0; j < spaces; j++)
-                {
-                    Zeichnung += " ";
-                }
-                for (int k = 0; k < stars; k++)
-                {
-                    zeichnung += "*\n".PadLeft(k);
-                }
-            }*/
         }
     }
 }
