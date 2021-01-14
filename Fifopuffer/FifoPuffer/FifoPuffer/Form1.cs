@@ -26,42 +26,23 @@ namespace FifoPuffer
 
         private void put_btn_Click(object sender, EventArgs e)
         {
-            int b = 0;
-            b++;
-            
-            string eingabezahlen = Convert.ToString(eingabezah);
-            if (string.IsNullOrEmpty(eingabezahlen))
-            {
-                MessageBox.Show("Die Zahl konnte nicht in den Puffer gelegt werden.");
-            }
-            else 
-            {
-                try
-                {
-                    fp.Put(eingabezahlen, b);
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Fehler" + ex.Message);
-                }
-                
-            }
+           try
+           {
+                int zahlen = Convert.ToInt32(eingabezah.Text);
+                fp.Put(zahlen);
+           }
+           catch (Exception ex)
+           {
+                MessageBox.Show("Fehler: " + ex.Message);
+           }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ausgabe_txt.Text = "";
-            if(fp.Eingabe != null)
-            {
-                foreach (string num in fp.Eingabe)
-                {
-                    ausgabe_txt.Text += num + ",";
-                } 
-            }
-            else
-            {
-                MessageBox.Show("Der Puffer ist leer");
-            }
+            ausgabe_txt.Text = fp.Get(ausgabe_txt.Text);
+            
 
         }
     }

@@ -10,35 +10,42 @@ namespace FifoPuffer
     {
 
         int puffergroesse;
-        List<string> eingabe = new List<string> { };
-        Boolean valid;
-        public List<string> ausgabe = new List<string> { };
+        int[] eingabe = new int[10];
+        string[] ausgabe = new string[] { };
+     
         public int Puffergroesse
         {
             get { return puffergroesse; }
             set { puffergroesse = value; }
         }
-        public List<string> Eingabe
+
+        public int[] Eingabe
         {
             get { return eingabe; }
             set { eingabe = value; }
         }
-        public Boolean Valid
-        {
-            get { return valid; }
-            set { valid = value; }
-        }
 
-        public void Put(string eingabezahlen, int b)
+        public void Put(int zahl)
         {
-            for (int i = 0; i < b; i++)
+           for(int i = 0;i < 10;i++)
             {
-                Eingabe.Add(eingabezahlen);
+                eingabe[i] += zahl; 
             }
         }
-        public void Get()
+        public string Get(string txtbox)
         {
-            
+            int i = 0;
+            foreach(var num in eingabe)
+            {
+                i++;
+                ausgabe[i] = num.ToString(); 
+            }
+            for(int b = 0; b < ausgabe.Length; b++)
+            {
+                txtbox += ausgabe[i] + ",";
+            }
+            return txtbox;
+
         }
         
     }
