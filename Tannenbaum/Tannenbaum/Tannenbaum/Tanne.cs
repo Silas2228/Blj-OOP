@@ -35,7 +35,49 @@ namespace Tannenbaum
         }
         public void Zeichnen()
         {
-
+            int zeilen = kronenhoehe;
+            for (int i = 0; i < zeilen; i++)
+            {
+                int stars = (i + 1) * 2 -1;
+                int spaces = (kronenhoehe - i) - 1;
+                for (int j = 0; j < spaces;j++)
+                {
+                    Zeichnung += " ";
+                }
+                for(int k = 0; k < stars;k++)
+                {
+                    Zeichnung += "*";
+                }
+                zeichnung += Environment.NewLine;
+            }
+            int bsh = stammhoehe;
+            int bsb = stammbreite;
+            for (int i = 0;i < bsh; i++)
+            {
+                int spacesstamm = kronenhoehe - (bsh / 2);
+                for(int j = 0; j < spacesstamm; j++)
+                {
+                    zeichnung += " ";
+                }
+                for(int k = 0;k < bsb; i++)
+                {
+                    zeichnung += "*";
+                }
+                zeichnung += Environment.NewLine;
+            }
+            /*for( int i = 0; i < zeilen;i++)
+            {
+                spaces = zeilen - 1 - i;
+                stars = (i + 1) * 2 - 1;
+                for(int j = 0; j < spaces; j++)
+                {
+                    Zeichnung += " ";
+                }
+                for (int k = 0; k < stars; k++)
+                {
+                    zeichnung += "*\n".PadLeft(k);
+                }
+            }*/
         }
     }
 }
