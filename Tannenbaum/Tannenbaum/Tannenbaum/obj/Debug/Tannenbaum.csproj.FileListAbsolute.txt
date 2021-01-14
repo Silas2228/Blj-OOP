@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\bin\Debug\Tannenbaum.exe.config
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\bin\Debug\Tannenbaum.exe
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\bin\Debug\Tannenbaum.pdb
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.csprojAssemblyReference.cache
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.Form1.resources
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.Properties.Resources.resources
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.csproj.GenerateResource.cache
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.exe
+C:\git\Blj-OOP\Tannenbaum\Tannenbaum\Tannenbaum\obj\Debug\Tannenbaum.pdb
