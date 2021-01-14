@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\bin\Debug\FifoPuffer.exe.config
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\bin\Debug\FifoPuffer.exe
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\bin\Debug\FifoPuffer.pdb
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.csprojAssemblyReference.cache
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.Form1.resources
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.Properties.Resources.resources
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.csproj.GenerateResource.cache
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.exe
+C:\git\Blj-OOP\Fifopuffer\FifoPuffer\FifoPuffer\obj\Debug\FifoPuffer.pdb
