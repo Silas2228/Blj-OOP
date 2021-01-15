@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\bin\Debug\Auto_Simulator.exe.config
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\bin\Debug\Auto_Simulator.exe
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\bin\Debug\Auto_Simulator.pdb
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.csprojAssemblyReference.cache
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.Form1.resources
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.Properties.Resources.resources
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.csproj.GenerateResource.cache
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.exe
+C:\git\Blj-OOP\AutoSimulator\Auto_Simulator\Auto_Simulator\obj\Debug\Auto_Simulator.pdb
