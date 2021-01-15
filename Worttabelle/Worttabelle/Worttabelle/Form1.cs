@@ -8,20 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Worttabelle
+namespace WortTabelle
 {
     public partial class Form1 : Form
     {
-        WordTab wt = new WordTab();
+        WortTab wt = new WortTab();
+        Parser ps = new Parser();
+        
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void woerter_btn_Click(object sender, EventArgs e)
+        private void words_btn_Click(object sender, EventArgs e)
         {
-            wt.Woerter = woerter_txt.Text;
-
+            ps.Parse(userinput_txt.Text);
+            output_txt.Text = wt.PrintTab();
         }
     }
 }

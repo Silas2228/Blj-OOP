@@ -25,25 +25,26 @@ namespace FifoPuffer
             get { return eingabe; }
             set { eingabe = value; }
         }
+        public string[] Ausgabe
+        {
+            get { return ausgabe; }
+            set { ausgabe = value; }
+        }
 
-        public void Put(int zahl)
+        public void Put(string[] zahl)
         {
-           eingabe = new int[puffergroesse];
-           for(int i = 0;i < eingabe.Length;i++)
-           {
-                eingabe[i] += zahl; 
-           }
-        }
-        public string Get(string txtbox)
-        {
+            eingabe = new int[puffergroesse];
             int i = 0;
-            ausgabe = Array.ConvertAll(eingabe, ele => ele.ToString());
-            for(int b = 0; b < eingabe.Length; b++)
+           foreach(string item in zahl)
             {
-                txtbox += ausgabe[i] + ",";
+                eingabe[i] = Convert.ToInt32(item);
+                i++;
             }
-            return txtbox;
         }
-        
+        public void Get()
+        {
+            ausgabe = Array.ConvertAll(eingabe, ele => ele.ToString());
+
+        }
     }
 }

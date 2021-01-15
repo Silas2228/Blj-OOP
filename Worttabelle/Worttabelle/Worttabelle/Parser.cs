@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Worttabelle
+namespace WortTabelle
 {
-    class Parser
+    public class Parser
     {
-
-        public void Parse()
+        WortTab wt = new WortTab();
+        string[] wordss;
+        public void Parse(string txtbox)
         {
-
+            wordss = txtbox.Split(' ');
+            wt.AddWord(wordss);
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F9801B78-E9F7-45A7-B4AE-B91BA016C7BC}</ProjectGuid>
+    <ProjectGuid>{AF0C6002-74F7-487E-BF02-C69C43D3615D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Worttabelle</RootNamespace>
-    <AssemblyName>Worttabelle</AssemblyName>
+    <RootNamespace>WortTabelle</RootNamespace>
+    <AssemblyName>WortTabelle</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,10 +55,7 @@
     <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WordTab.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="WortTab.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

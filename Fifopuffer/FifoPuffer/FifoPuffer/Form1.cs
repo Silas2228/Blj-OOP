@@ -28,22 +28,25 @@ namespace FifoPuffer
         {
            try
            {
-                int zahlen = Convert.ToInt32(eingabezah.Text);
-                fp.Put(zahlen);
+                string[] zahlena;
+                zahlena = new string[fp.Puffergroesse];
+                zahlena = new string[] {eingabezah.Text };
+                fp.Put(zahlena);
            }
            catch (Exception ex)
            {
                 MessageBox.Show("Fehler: " + ex.Message);
            }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ausgabe_txt.Text = "";
-            ausgabe_txt.Text = fp.Get(ausgabe_txt.Text);
-            
-
+            fp.Get();
+            foreach (String item in fp.Ausgabe)
+            {
+                ausgabe_txt.Text += item + ",";
+            }
         }
     }
 }

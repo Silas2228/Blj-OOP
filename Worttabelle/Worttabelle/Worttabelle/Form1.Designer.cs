@@ -1,4 +1,4 @@
-﻿namespace Worttabelle
+﻿namespace WortTabelle
 {
     partial class Form1
     {
@@ -28,46 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.woerter_txt = new System.Windows.Forms.TextBox();
-            this.woerter_btn = new System.Windows.Forms.Button();
-            this.ausgabewoerter_txt = new System.Windows.Forms.TextBox();
+            this.output_txt = new System.Windows.Forms.TextBox();
+            this.userinput_txt = new System.Windows.Forms.TextBox();
+            this.words_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // woerter_txt
+            // output_txt
             // 
-            this.woerter_txt.Location = new System.Drawing.Point(13, 13);
-            this.woerter_txt.Multiline = true;
-            this.woerter_txt.Name = "woerter_txt";
-            this.woerter_txt.Size = new System.Drawing.Size(409, 167);
-            this.woerter_txt.TabIndex = 0;
+            this.output_txt.Location = new System.Drawing.Point(12, 196);
+            this.output_txt.Multiline = true;
+            this.output_txt.Name = "output_txt";
+            this.output_txt.ReadOnly = true;
+            this.output_txt.Size = new System.Drawing.Size(326, 183);
+            this.output_txt.TabIndex = 0;
             // 
-            // woerter_btn
+            // userinput_txt
             // 
-            this.woerter_btn.Location = new System.Drawing.Point(428, 82);
-            this.woerter_btn.Name = "woerter_btn";
-            this.woerter_btn.Size = new System.Drawing.Size(125, 28);
-            this.woerter_btn.TabIndex = 1;
-            this.woerter_btn.Text = "button1";
-            this.woerter_btn.UseVisualStyleBackColor = true;
-            this.woerter_btn.Click += new System.EventHandler(this.woerter_btn_Click);
+            this.userinput_txt.Location = new System.Drawing.Point(12, 12);
+            this.userinput_txt.Multiline = true;
+            this.userinput_txt.Name = "userinput_txt";
+            this.userinput_txt.Size = new System.Drawing.Size(326, 175);
+            this.userinput_txt.TabIndex = 1;
             // 
-            // ausgabewoerter_txt
+            // words_btn
             // 
-            this.ausgabewoerter_txt.Location = new System.Drawing.Point(12, 186);
-            this.ausgabewoerter_txt.Multiline = true;
-            this.ausgabewoerter_txt.Name = "ausgabewoerter_txt";
-            this.ausgabewoerter_txt.ReadOnly = true;
-            this.ausgabewoerter_txt.Size = new System.Drawing.Size(410, 197);
-            this.ausgabewoerter_txt.TabIndex = 2;
+            this.words_btn.Location = new System.Drawing.Point(344, 170);
+            this.words_btn.Name = "words_btn";
+            this.words_btn.Size = new System.Drawing.Size(122, 50);
+            this.words_btn.TabIndex = 2;
+            this.words_btn.Text = "Wörter zählen";
+            this.words_btn.UseVisualStyleBackColor = true;
+            this.words_btn.Click += new System.EventHandler(this.words_btn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(344, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Text";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(347, 365);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Wort-Tabelle";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ausgabewoerter_txt);
-            this.Controls.Add(this.woerter_btn);
-            this.Controls.Add(this.woerter_txt);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.words_btn);
+            this.Controls.Add(this.userinput_txt);
+            this.Controls.Add(this.output_txt);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -77,9 +99,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox woerter_txt;
-        private System.Windows.Forms.Button woerter_btn;
-        private System.Windows.Forms.TextBox ausgabewoerter_txt;
+        private System.Windows.Forms.TextBox output_txt;
+        private System.Windows.Forms.TextBox userinput_txt;
+        private System.Windows.Forms.Button words_btn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
