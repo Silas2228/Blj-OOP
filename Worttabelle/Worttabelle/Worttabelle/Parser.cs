@@ -8,12 +8,24 @@ namespace WortTabelle
 {
     public class Parser
     {
-        WortTab wt = new WortTab();
-        string[] wordss;
-        public void Parse(string txtbox)
+        WortTab wt;
+
+        public Parser(WortTab wrdTb)
         {
-            wordss = txtbox.Split(' ');
-            wt.AddWord(wordss);
+            wt = wrdTb;
+        }
+
+        public void Parse(string text)
+        {
+
+            // text parsen (im Parameter text ist ein ganzer drin! du musst jetzt die Wörter finden).
+
+            string[] foundwords = text.Split(' ', '.', ';', ':', ',');
+
+            foreach(string word in foundwords)
+            { 
+                wt.AddWord(word);
+            }
         }
     }
 }

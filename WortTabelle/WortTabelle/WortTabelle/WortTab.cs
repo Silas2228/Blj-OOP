@@ -3,57 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WortTabelle
 {
     public class WortTab
     {
-        string words;
-        List<string> wordlist = new List<string> { };
-        string Wordstxt;
-        public List<string> Wordlist
+  
+        Dictionary<string, int> words = new Dictionary<string, int>();
+
+        public void AddWord(string word)
         {
-            get { return wordlist; }
-            set { wordlist = value; }
-        }
-        public string Words
-        {
-            get { return words; }
-            set { words = value; }
-        }
-        public string wordtxt
-        {
-            get { return Wordstxt; }
-            set { Wordstxt = value; }
-        }
-        
-        public WortTab()
-        {
+            if (words.ContainsKey(word))
+            {
+                words[word] += 1;
+            }
+            else
+            {
+                words.Add(word, 1);
+            }
             
         }
-        public void AddWord(string[] wordss)
-        {
-            foreach(String word in wordss)
-            {
-                wordlist.Add(word);
-            }
 
-        }
+        /*      key       value 
+         *      ---       ----- 
+         *      das         2
+         *      ist         1
+         *      ein         1 
+         *      guter       1
+         *      text        1 
+         */
+
         public string GetTab()
         {
-            //Macht die Wörter liste zu einem String
-            string word1 = "";
-             foreach(String word in wordlist)
-             {
-                word1 += word + Environment.NewLine; 
-             }
-            return word1;
-        }
-        public string PrintTab()
-        {
-            //ausgabe der Wörter
+           string tabelle = "Wort                 Anzahl" + Environment.NewLine;
+           tabelle += "---------------------------------" + Environment.NewLine;
+
+            foreach (string key in words.Keys)
+            {
+                string word = key;
+                int anzahl = words[key];
+                tabelle += word + "\t\t" +anzahl.ToString() + Environment.NewLine;
+            }
             
-            return GetTab(); ;
+
+            return tabelle;
         }
+
+        public void PrintTab(TextBox printTo)
+        {
+            printTo.Text = this.GetTab();
+        }
+
+       
     }
 }
