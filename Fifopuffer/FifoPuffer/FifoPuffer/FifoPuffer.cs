@@ -9,9 +9,10 @@ namespace FifoPuffer
     public class FifoPuffer
     {
 
-        int puffergroesse;
-        int[] eingabe = new int[10];
+        int puffergroesse = 0;
+        int[] eingabe;
         string[] ausgabe = new string[] { };
+        
      
         public int Puffergroesse
         {
@@ -27,25 +28,21 @@ namespace FifoPuffer
 
         public void Put(int zahl)
         {
-           for(int i = 0;i < 10;i++)
-            {
+           eingabe = new int[puffergroesse];
+           for(int i = 0;i < eingabe.Length;i++)
+           {
                 eingabe[i] += zahl; 
-            }
+           }
         }
         public string Get(string txtbox)
         {
             int i = 0;
-            foreach(var num in eingabe)
-            {
-                i++;
-                ausgabe[i] = num.ToString(); 
-            }
-            for(int b = 0; b < ausgabe.Length; b++)
+            ausgabe = Array.ConvertAll(eingabe, ele => ele.ToString());
+            for(int b = 0; b < eingabe.Length; b++)
             {
                 txtbox += ausgabe[i] + ",";
             }
             return txtbox;
-
         }
         
     }
