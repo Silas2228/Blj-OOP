@@ -16,10 +16,17 @@ namespace Worttabelle
             set { woerter = value; }
         }
 
-
         public void AddWord()
         {
             source = woerter.Split(new char[] { '.', '?', ' ', '!', ';' }, StringSplitOptions.RemoveEmptyEntries);
+
+        }
+        public void GetTab()
+        {
+
+        }
+        public void PrintTab()
+        {
 
         }
     }

@@ -59,7 +59,7 @@ namespace Tannenbaum
                 {
                     zeichnung += " ";
                 }
-                for(int k = 0;k < bsb; i++)
+                for(int k = 0;k < bsb; k++)
                 {
                     zeichnung += "*";
                 }

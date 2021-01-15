@@ -8,5 +8,10 @@ namespace Worttabelle
 {
     class Parser
     {
+
+        public void Parse()
+        {
+
+        }
     }
 }
