@@ -10,7 +10,7 @@ namespace Auto_Simulator
     {
         string marke;
         int PS;
-        int AktuelleGeschwindigkeit;
+        int aktuelleGeschwindigkeit;
         int AktuellerGang;
         bool istMotorGestartet = false;
 
@@ -20,37 +20,44 @@ namespace Auto_Simulator
             get{ return marke; }
             set { marke = value; }
         }
-
-        public void StarteMotor()
+        public int AktuelleGeschwindigkeit
         {
+            get { return aktuelleGeschwindigkeit; }
+            set { aktuelleGeschwindigkeit = value; }
+        }
 
+        public void StarteMotor(bool motorgestartet)
+        {
+            istMotorGestartet = motorgestartet;
         }
         public void SchalteMotorAus()
         {
             istMotorGestartet = true;
         }
-        public void GibGas(string gas)
+        public void GibGas()
         {
             if(istMotorGestartet == true)
             {
-                string textbox = "";
+    
                 if(marke == "Porsche 250 Ps")
                 {
-                    for(int i = 0; i < 250; i++)
+                    while(aktuelleGeschwindigkeit < 250)
                     {
-                        gas = i.ToString();
+                        aktuelleGeschwindigkeit++;
                     }
                 }
                 else if(marke == "Opel 90 Ps")
                 {
-
+                    
                 }
                 else
                 {
-
+                   
                 }
-                
+
             }
+           
+
         }
         public void Bremse()
         {

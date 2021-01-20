@@ -23,8 +23,14 @@ namespace Auto_Simulator
 
         private void Gas_btn_Click(object sender, EventArgs e)
         {
-            Auto.GibGas(gas_txt.Text);
 
+          while(true)
+          {
+                Auto.GibGas();
+                gas_txt.Text = Auto.AktuelleGeschwindigkeit.ToString();
+                Application.DoEvents();
+          }
+ 
         }
 
         private void Bremsen_btn_Click(object sender, EventArgs e)
@@ -39,8 +45,8 @@ namespace Auto_Simulator
 
         private void MotorStarten_btn_Click(object sender, EventArgs e)
         {
-            
-            Auto.StarteMotor();
+            bool starten = true;
+            Auto.StarteMotor(starten);
         }
 
         private void comboBoxAutos_SelectedIndexChanged(object sender, EventArgs e)
