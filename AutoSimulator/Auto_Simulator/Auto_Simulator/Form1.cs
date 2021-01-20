@@ -36,6 +36,7 @@ namespace Auto_Simulator
         private void Bremsen_btn_Click(object sender, EventArgs e)
         {
             Auto.Bremse();
+            Application.DoEvents();
         }
 
         private void Hupe_btn_Click(object sender, EventArgs e)

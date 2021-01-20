@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Timers;
 namespace Auto_Simulator
 {
     class Auto
@@ -41,27 +43,36 @@ namespace Auto_Simulator
     
                 if(marke == "Porsche 250 Ps")
                 {
-                    while(aktuelleGeschwindigkeit < 250)
+                    while(aktuelleGeschwindigkeit != 250)
                     {
                         aktuelleGeschwindigkeit++;
                     }
                 }
                 else if(marke == "Opel 90 Ps")
                 {
-                    
+                    while(aktuelleGeschwindigkeit != 90)
+                    {
+                        aktuelleGeschwindigkeit++;
+                    }
+                }
+                else if(marke == "Ferrari 370 Ps")
+                {
+                  while(aktuelleGeschwindigkeit != 370)
+                    {
+                        aktuelleGeschwindigkeit++;
+                    }
                 }
                 else
                 {
-                   
+                    MessageBox.Show("Bitte wählen Sie ein Auto aus!");
                 }
-
             }
            
 
         }
         public void Bremse()
         {
-
+            aktuelleGeschwindigkeit--;
         }
         public void Hupe()
         {
