@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxAutos = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Hupe_btn
@@ -77,7 +78,7 @@
             this.Bremsen_btn.TabIndex = 6;
             this.Bremsen_btn.Text = "Bremse";
             this.Bremsen_btn.UseVisualStyleBackColor = true;
-            this.Bremsen_btn.Click += new System.EventHandler(this.Bremsen_btn_Click);
+            this.Bremsen_btn.MouseHover += new System.EventHandler(this.Bremsen_btn_MouseHover);
             // 
             // label1
             // 
@@ -129,11 +130,20 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Auto wählen";
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(162, 166);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 17);
+            this.label2.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxAutos);
             this.Controls.Add(this.label3);
@@ -161,6 +171,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxAutos;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
     }
 }
 

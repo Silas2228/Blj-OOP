@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Auto_Simulator
@@ -27,16 +28,14 @@ namespace Auto_Simulator
           while(true)
           {
                 Auto.GibGas();
+                Auto.GangSchaltung();
+                Thread.Sleep(150);
                 gas_txt.Text = Auto.AktuelleGeschwindigkeit.ToString();
+                label3.Text = Auto.Gang.ToString();
                 Application.DoEvents();
+                
           }
- 
-        }
-
-        private void Bremsen_btn_Click(object sender, EventArgs e)
-        {
-            Auto.Bremse();
-            Application.DoEvents();
+            
         }
 
         private void Hupe_btn_Click(object sender, EventArgs e)
@@ -47,6 +46,7 @@ namespace Auto_Simulator
         private void MotorStarten_btn_Click(object sender, EventArgs e)
         {
             bool starten = true;
+            label2.BackColor = System.Drawing.Color.Green;
             Auto.StarteMotor(starten);
         }
 
@@ -55,6 +55,17 @@ namespace Auto_Simulator
             string auto;
             auto = comboBoxAutos.Text;
             Auto.Marke = auto;
+        }
+
+        private void Bremsen_btn_MouseHover(object sender, EventArgs e)
+        {
+            while (true)
+            {
+                Auto.Bremse();
+                Thread.Sleep(150);
+                Application.DoEvents();
+            }
+
         }
     }
 }

@@ -15,7 +15,12 @@ namespace Auto_Simulator
         int aktuelleGeschwindigkeit;
         int AktuellerGang;
         bool istMotorGestartet = false;
-
+        
+        public int Gang
+        {
+            get { return AktuellerGang; }
+            set { AktuellerGang = value; }
+        }
 
         public string Marke
         {
@@ -40,27 +45,30 @@ namespace Auto_Simulator
         {
             if(istMotorGestartet == true)
             {
-    
-                if(marke == "Porsche 250 Ps")
+                if (marke == "Porsche 250 Ps")
                 {
-                    while(aktuelleGeschwindigkeit != 250)
-                    {
-                        aktuelleGeschwindigkeit++;
-                    }
+                    PS = 250;
+                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
+
+                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
+                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
+
                 }
                 else if(marke == "Opel 90 Ps")
                 {
-                    while(aktuelleGeschwindigkeit != 90)
-                    {
-                        aktuelleGeschwindigkeit++;
-                    }
+                    PS = 90;
+                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
+
+                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
+                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
                 }
                 else if(marke == "Ferrari 370 Ps")
                 {
-                  while(aktuelleGeschwindigkeit != 370)
-                    {
-                        aktuelleGeschwindigkeit++;
-                    }
+                    PS = 370;
+                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
+
+                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
+                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
                 }
                 else
                 {
@@ -72,11 +80,43 @@ namespace Auto_Simulator
         }
         public void Bremse()
         {
-            aktuelleGeschwindigkeit--;
+
+            if(AktuelleGeschwindigkeit > 0)
+            { 
+                AktuelleGeschwindigkeit -= 10;
+            }
+            GangSchaltung();
         }
         public void Hupe()
         {
 
+        }
+        public void GangSchaltung()
+        {
+            if(AktuelleGeschwindigkeit < 10)
+            {
+                AktuellerGang = 1;
+            }
+            else if(AktuelleGeschwindigkeit < 20)
+            {
+                AktuellerGang = 2;
+            }
+            else if(AktuelleGeschwindigkeit < 30)
+            {
+                AktuellerGang = 3;
+            }
+            else if(aktuelleGeschwindigkeit < 40)
+            {
+                AktuellerGang = 4;
+            }
+            else if(aktuelleGeschwindigkeit < 70)
+            {
+                AktuellerGang = 5;
+            }
+            else
+            {
+                AktuellerGang = 6;
+            }
         }
     }
 }
