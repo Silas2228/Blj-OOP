@@ -96,7 +96,7 @@
             this.gas_txt.Name = "gas_txt";
             this.gas_txt.Size = new System.Drawing.Size(214, 66);
             this.gas_txt.TabIndex = 8;
-            this.gas_txt.Text = "A";
+            this.gas_txt.Text = "KmH";
             this.gas_txt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -107,7 +107,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 66);
             this.label3.TabIndex = 9;
-            this.label3.Text = "B";
+            this.label3.Text = "Gear";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBoxAutos

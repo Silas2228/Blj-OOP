@@ -19,20 +19,18 @@ namespace Auto_Simulator
         public int Gang
         {
             get { return AktuellerGang; }
-            set { AktuellerGang = value; }
-        }
-
-        public string Marke
-        {
-            get{ return marke; }
-            set { marke = value; }
+            private set { AktuellerGang = value; }
         }
         public int AktuelleGeschwindigkeit
         {
             get { return aktuelleGeschwindigkeit; }
-            set { aktuelleGeschwindigkeit = value; }
+            private set { aktuelleGeschwindigkeit = value; }
         }
-
+        public bool IstMotorGestartet
+        {
+            get { return istMotorGestartet; }
+            set { value = istMotorGestartet; }
+        }
         public void StarteMotor(bool motorgestartet)
         {
             istMotorGestartet = motorgestartet;
@@ -41,34 +39,24 @@ namespace Auto_Simulator
         {
             istMotorGestartet = true;
         }
+
+        public Auto(string Marke, int Ps)
+        {
+            marke = Marke;
+            PS = Ps;
+        }
+
         public void GibGas()
         {
+            
             if(istMotorGestartet == true)
             {
-                if (marke == "Porsche 250 Ps")
+                if (marke != null || marke != "")
                 {
-                    PS = 250;
-                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
+                    aktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
 
-                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
-                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
-
-                }
-                else if(marke == "Opel 90 Ps")
-                {
-                    PS = 90;
-                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
-
-                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
-                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
-                }
-                else if(marke == "Ferrari 370 Ps")
-                {
-                    PS = 370;
-                    AktuelleGeschwindigkeit += Convert.ToInt32((0.02 * PS));
-
-                    if (AktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
-                        AktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
+                    if (aktuelleGeschwindigkeit > Convert.ToInt32(110 + PS / 2))
+                        aktuelleGeschwindigkeit = Convert.ToInt32(110 + PS / 2);
                 }
                 else
                 {
@@ -117,6 +105,11 @@ namespace Auto_Simulator
             {
                 AktuellerGang = 6;
             }
+
+        }
+        public override string ToString()
+        {
+            return marke + " " + PS.ToString();
         }
     }
 }

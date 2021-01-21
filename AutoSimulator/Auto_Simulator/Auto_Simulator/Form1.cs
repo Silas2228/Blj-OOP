@@ -13,13 +13,13 @@ namespace Auto_Simulator
 {
     public partial class Form1 : Form
     {
-        Auto Auto = new Auto();
+        Auto car;
         public Form1()
         {
             InitializeComponent();
-            comboBoxAutos.Items.Add("Porsche 250 Ps");
-            comboBoxAutos.Items.Add("Opel 90 Ps");
-            comboBoxAutos.Items.Add("Ferrari 370 Ps");
+            comboBoxAutos.Items.Add(new Auto("Opel", 90));
+            comboBoxAutos.Items.Add(new Auto("Porsche", 250));
+            comboBoxAutos.Items.Add(new Auto("Ferrari", 370));
         }
 
         private void Gas_btn_Click(object sender, EventArgs e)
@@ -27,11 +27,11 @@ namespace Auto_Simulator
 
           while(true)
           {
-                Auto.GibGas();
-                Auto.GangSchaltung();
+                car.GibGas();
+                car.GangSchaltung();
                 Thread.Sleep(150);
-                gas_txt.Text = Auto.AktuelleGeschwindigkeit.ToString();
-                label3.Text = Auto.Gang.ToString();
+                gas_txt.Text = car.AktuelleGeschwindigkeit.ToString();
+                label3.Text = car.Gang.ToString();
                 Application.DoEvents();
                 
           }
@@ -40,30 +40,48 @@ namespace Auto_Simulator
 
         private void Hupe_btn_Click(object sender, EventArgs e)
         {
-            Auto.Hupe();
+            car.Hupe();
         }
 
         private void MotorStarten_btn_Click(object sender, EventArgs e)
         {
             bool starten = true;
             label2.BackColor = System.Drawing.Color.Green;
-            Auto.StarteMotor(starten);
+            try
+            {
+                    car.StarteMotor(starten);   
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+            
         }
-
+        private void FarbeMotor()
+        {
+            label2.BackColor = System.Drawing.Color.Black;
+        }
         private void comboBoxAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string auto;
-            auto = comboBoxAutos.Text;
-            Auto.Marke = auto;
+            car = comboBoxAutos.SelectedItem as Auto;
+
         }
+
 
         private void Bremsen_btn_MouseHover(object sender, EventArgs e)
         {
-            while (true)
+            try
             {
-                Auto.Bremse();
-                Thread.Sleep(150);
-                Application.DoEvents();
+                while (true)
+                {
+                    car.Bremse();
+                    Thread.Sleep(150);
+                    Application.DoEvents();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
             }
 
         }
