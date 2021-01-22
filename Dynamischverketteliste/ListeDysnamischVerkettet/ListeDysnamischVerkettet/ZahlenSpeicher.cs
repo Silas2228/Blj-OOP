@@ -58,17 +58,18 @@ namespace ListeDysnamischVerkettet
 
             if(sortorder == SortOrder.ASCENDING)
             {
-                string[] output = { };
+                int[] output = { };
                 for (int i = 0; i < size; i++)
                 {
-                    output[i] = current.ToString() + ",";
+                    output[i] = Convert.ToInt32(current);
                 }
                 string zahlen = "";
+                Array.Sort(output);
                 int j = 0;
-                foreach (string zahl in output)
+                foreach (int zahl in output)
                 {
-                    j++;
                     zahlen += output[j].ToString() + ",";
+                    j++;
                 }
                 return zahlen;
             }
