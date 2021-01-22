@@ -20,7 +20,9 @@ namespace FifoPuffer
 
         private void puffererstellen_btn_Click(object sender, EventArgs e)
         {
-            int eingabepuffergroesse = Convert.ToInt32(numeric_puffergroesse.Value);
+            int eingabepuffergroesse = 0; 
+            eingabepuffergroesse = Convert.ToInt32(numeric_puffergroesse.Value);
+            
             fp.Puffergroesse = eingabepuffergroesse;
         }
 
@@ -47,6 +49,11 @@ namespace FifoPuffer
             {
                 ausgabe_txt.Text += item + ",";
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ausgabe_txt.Clear();
         }
     }
 }
