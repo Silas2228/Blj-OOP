@@ -1,0 +1,10 @@
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.csprojAssemblyReference.cache
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.Form1.resources
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.Properties.Resources.resources
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.csproj.GenerateResource.cache
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.csproj.CoreCompileInputs.cache
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\bin\Debug\ListeDysnamischVerkettet.exe.config
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\bin\Debug\ListeDysnamischVerkettet.exe
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\bin\Debug\ListeDysnamischVerkettet.pdb
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.exe
+C:\git\Blj-OOP\Dynamischverketteliste\ListeDysnamischVerkettet\ListeDysnamischVerkettet\obj\Debug\ListeDysnamischVerkettet.pdb
