@@ -1,9 +1,0 @@
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\bin\Debug\Worttabelle.exe.config
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\bin\Debug\Worttabelle.exe
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\bin\Debug\Worttabelle.pdb
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.csprojAssemblyReference.cache
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.Properties.Resources.resources
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.csproj.GenerateResource.cache
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.csproj.CoreCompileInputs.cache
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.exe
-C:\git\Blj-OOP\Worttabelle\Worttabelle\Worttabelle\obj\Debug\Worttabelle.pdb
